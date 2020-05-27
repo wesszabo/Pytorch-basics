@@ -1,0 +1,184 @@
+body {
+    counter-reset: remarks;
+    counter-reset: exercise;
+    counter-reset: my-bibl-counter;
+}
+
+.background {
+    background-color: PowderBlue;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.8em;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.4em;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+p.author {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.4em;
+    text-align: justify;
+    line-height: normal;
+}
+
+p.date {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+p.abstract {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.4em;
+    text-align: left;
+    line-height: 1.4;
+}
+
+p.normal {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    text-align: justify;
+    line-height: 1.2;
+}
+
+p.normal-indent {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    text-align: justify;
+    line-height: 1.2;
+    text-indent: 0.5em;
+}
+
+.definition {
+    font-size: 1.1em;
+    text-align: left;
+    border-left-color: blue;
+    border-left-style: solid;
+    border-left-width: 0.3em;
+    padding-left: 0.6em;
+}
+
+.theorem {
+    font-size: 1.1em;
+    text-align: left;
+    border-left-color: rgb(255, 47, 0);
+    border-left-style: solid;
+    border-left-width: 0.3em;
+    padding-left: 0.6em;
+    font-style: italic;
+}
+
+.proof {
+    font-size: 1.1em;
+    text-align: left;
+    border-left-color: rgb(19, 114, 27);
+    border-left-style: solid;
+    border-left-width: 0.3em;
+    padding-left: 0.6em;
+}
+
+.exercise {
+    font-size: 1.1em;
+    text-align: left;
+    border-left-color: rgb(204,153,102);
+    border-left-style: solid;
+    border-left-width: 0.3em;
+    padding-left: 0.6em;
+}
+
+.exercise::before {
+    counter-increment: exercise;
+    content: counter(exercise) ". Exercise. ";
+    font-weight: bold;
+}
+
+.solution {
+    font-size: 1.1em;
+    text-align: left;
+    border-left-color: rgb(204,153,102);
+    border-left-style: solid;
+    border-left-width: 0.3em;
+    padding-left: 0.6em;
+}
+
+.solution::before {
+    content: "Solution. ";
+    font-weight: bold;
+}
+
+.solution_no_word {
+    font-size: 1.1em;
+    text-align: left;
+    border-left-color: rgb(204,153,102);
+    border-left-style: solid;
+    border-left-width: 0.3em;
+    padding-left: 0.6em;
+}
+
+.remarks {
+    font-size: 1.1em;
+    text-align: left;
+    border-left-color: rgb(255, 153, 153);
+    border-left-style: solid;
+    border-left-width: 0.3em;
+    padding-left: 0.6em;
+    font-style: italic;
+}
+
+.remarks::before {
+    counter-increment: remarks;
+    content: counter(remarks) ". Remark. ";
+    font-weight: bold;
+}
+
+ul.square {
+    font-family: Georgia, serif;
+    list-style-type: square;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.bibl {
+    font-family: Georgia, serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+    list-style: none;
+}
+  
+.my-bibl::before {
+  /* Increment "my-bibl-counter" by 1 */
+  counter-increment: my-bibl-counter;
+  content: "[" counter(my-bibl-counter) "] ";
+}
+    
+.code {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-style: normal;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+    
+.prompt.output_prompt {
+    visibility: hidden;
+}
+
+.output_subarea {
+     border-style: dotted;
+     border-color: red;
+}
