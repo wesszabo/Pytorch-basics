@@ -1,3 +1,4 @@
+<style>
 body {
     counter-reset: remarks;
     counter-reset: exercise;
@@ -182,3 +183,4 @@ ul.square {
      border-style: dotted;
      border-color: red;
 }
+</style>
