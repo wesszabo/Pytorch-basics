@@ -135,16 +135,17 @@ p.normal-indent {
 .remarks {
     font-size: 1.1em;
     text-align: left;
-    border-left-color: rgb(255, 153, 153);
-    border-left-style: solid;
-    border-left-width: 0.3em;
+    %border-left-color: rgb(255, 153, 153);
+    %border-left-style: solid;
+    %border-left-width: 0.3em;
     padding-left: 0.6em;
     font-style: italic;
+    background-color: PowderBlue;
 }
 
 .remarks::before {
     counter-increment: remarks;
-    content: counter(remarks) ". Remark. ";
+    content: "Remark " counter(remarks) ".";
     font-weight: bold;
 }
 
