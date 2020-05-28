@@ -1,10 +1,13 @@
 channels:
+  - pytorch
   - conda-forge
 dependencies:
-  - python
-  - numpy
-  - scipy
-  - plotly
   - ipywidgets
-  - rise
   - jupyter_contrib_nbextensions
+  - numpy
+  - plotly
+  - python
+  - pytorch
+  - scipy
+  - rise
+  
