@@ -1,5 +1,5 @@
-# template
-Template
+# PyTorch
+PyTorch basics, for beginners
 ---
 # Contributors
 
