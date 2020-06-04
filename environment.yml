@@ -9,5 +9,5 @@ dependencies:
   - python
   - pytorch
   - scipy
-  - rise
-  
+  - seaborn
+  - torchvision
